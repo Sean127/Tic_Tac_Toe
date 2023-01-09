@@ -1,0 +1,90 @@
+/*Full Body*/
+body{
+    color:white;
+    background-color: black;
+    margin: 0;
+    font-size: 1.25rem;
+    font-family: 'Roboto Slab', sans-serif;
+
+}
+/*Heading*/
+#heading{
+    text-align: center;
+    font-size: 3rem;
+}
+
+/*Game Area and winnning information*/
+#game-area{
+    width: 100%;
+	display: grid;
+	justify-content: center;
+	align-content: center;
+	justify-items: center;
+	align-items: center;
+	grid-template-columns: repeat(3, auto)
+}
+
+.cell {
+	width: 100px;;
+	height: 100px;
+	border: 1px solid white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	cursor: pointer;
+    color:white;
+}
+
+#game-info{
+    text-align: center;
+}
+
+.win-info{
+    margin-top: 15px;
+    width: 100%;
+
+}
+
+#winningMessage{
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 1.5rem;
+}
+
+#restart{
+    margin-top: 15px;
+    text-align: center;
+}
+
+#player1{
+    float: left;
+    margin-left: 25%;
+    margin-top: 50px;
+}
+
+#player2{
+    float: right;
+    margin-right: 25%;
+    margin-top: 50px;
+}
+
+/*-- Media Queries --*/
+
+@media (max-width: 1000px){
+    
+    #player1{
+        font-size: 1rem;
+    }
+
+    #player2{
+        font-size: 1rem;
+    }
+
+    #winningMessage{
+        text-align: center;
+        margin-top: 100px;
+        font-size: 1rem;
+    }
+
+}
